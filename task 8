@@ -1,0 +1,113 @@
+# โปรแกรม สั่งกาแฟตามสั่ง 
+ 
+List_Menu = []
+size_total = []
+ 
+def Total():
+  global size_total
+  Result_int = int(size_total[0])
+  Result = Result_int*Number
+  print("รวมเป็นทั้งหมด : ", Result, " บาท")
+  print("คุณ", Hello, '\n'
+  ,"เมนู : ", List_Menu, '\n'
+  ,"จำนวน", Number, "แก้ว" '\n'
+  ,"รวมทั้งหมดที่ต้องจ่าย : ", Result, '\n')
+  quit()
+
+ 
+ # ------------------------------------------------------------------------------------------------
+ 
+
+Hello = input("ร้านกาแฟริมคลองแสนแสบ ยินดีต้อนรับคุณลูกค้า คุณลูกค้าชื่ออิหยังครับ : ")
+Number = int(input("คุณลูกค้าต้องการกาแฟกี่แก้วครับ : "))
+ 
+Order_Menu = input("คุณลูกคร๊าาต้องการ เมนู๋ อะไรหรอครับ ต้องการ ----กาแฟ----กด 1 "'\n'
+                    "                                                  ต้องการ -----ชา----- กด 2 " '\n'
+                    "                                                  กรอกคำตอบเลยจ้าาา : ")
+ 
+ 
+if Order_Menu == "1":                                                              #1
+  Introduce_Menu1 = input("ลูกค้าต้องการนมหรือไม่"'\n'
+  "ต้องการ กด 1 " '\n'
+  "ถ้าไม่ต้องการ กด 2 " '\n'
+  "กรอกคำตอบเลยจ้าา : ")
+  if Introduce_Menu1 == "1":
+    print(" ดูท่าคุณจะเหนื่อย ----Americano--- หน่อยมั้ย ")
+    List_Menu.append("--Americano--")
+    
+    Size_menu = print("Size S = 65","ต้องการกด 's' " '\n'
+    "Size M = 85","ต้องการกด 'm' " '\n'
+    "Size L = 105","ต้องการกด 'l' " '\n')
+    want_size = input("อยากได้แก้วขนาดเท่าไหร่ครับ : ")
+    want_size.lower()
+    if want_size == "s":
+      size_total.append(65)
+      Total()
+    elif want_size == "m":
+      size_total.append(85)
+      Total()
+    elif want_size == "l":
+      size_total.append(105)
+      Total()
+  
+  elif Introduce_Menu1 == "2":
+    print("ดูท่าคุณจะเหนื่อย ----Latte--- หน่อยมั้ย ")
+    List_Menu.append("--Latte--")
+    
+    Size_menu = print("Size S = 65","ต้องการกด 's' " '\n'
+    "Size M = 85","ต้องการกด 'm' " '\n'
+    "Size L = 105","ต้องการกด 'l' " '\n')
+    want_size = input("อยากได้แก้วขนาดเท่าไหร่ครับ : ")
+    want_size.lower()
+    if want_size == "s":
+      size_total.append(65)
+      Total()
+    elif want_size == "m":
+      size_total.append(85)
+      Total()
+    elif want_size == "l":
+      size_total.append(105)
+      Total()
+ 
+ 
+elif Order_Menu == "2":                                                                   #2
+  Introduce_Menu2 = input("ลูกค้าต้องการนมหรือไม่"'\n'
+  "ต้องการ กด 1 " '\n'
+  "ถ้าไม่ต้องการ กด 2 " '\n'
+  "กรอกคำตอบเลยจ้าา : ")
+  if Introduce_Menu2 == "1":
+    print(" ดูท่าคุณจะเหนื่อย ----Taiwanese Milk--- หน่อยมั้ย ")
+    List_Menu.append("--Taiwanese Milk--")
+    
+    Size_menu = print("Size S = 65","ต้องการกด 's' " '\n'
+    "Size M = 85","ต้องการกด 'm' " '\n'
+    "Size L = 105","ต้องการกด 'l' " '\n')
+    want_size = input("อยากได้แก้วขนาดเท่าไหร่ครับ : ")
+    want_size.lower()
+    if want_size == "s":
+      size_total.append(65)
+      Total()
+    elif want_size == "m":
+      size_total.append(85)
+      Total()
+    elif want_size == "l":
+      size_total.append(105)
+      Total()
+  elif Introduce_Menu2 == "2":
+    print("ดูท่าคุณจะเหนื่อย ----Fruity Tea--- หน่อยมั้ย ")
+    List_Menu.append("--Fruity Tea--")
+    
+    Size_menu = print("Size S = 65","ต้องการกด 's' " '\n'
+    "Size M = 85","ต้องการกด 'm' " '\n'
+    "Size L = 105","ต้องการกด 'l' " '\n')
+    want_size = input("อยากได้แก้วขนาดเท่าไหร่ครับ : ")
+    want_size.lower()
+    if want_size == "s":
+      size_total.append(65)
+      Total()
+    elif want_size == "m":
+      size_total.append(85)
+      Total()
+    elif want_size == "l":
+      size_total.append(105)
+      Total()
